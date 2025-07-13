@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display, serif';
+    }
+
+   
+    
+/* .top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  font-size: 14px;
+  background: #f8f8f8;
+  color: #555;
+}
+
+.top-left span,
+.top-right a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #333;
+}/* */
+
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f89436;
+      padding: 15px 30px;
+    }
+
+    .logo img {
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .nav-menu a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #000;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    .nav-icons i {
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: url('assets/hero-1.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content {
+      background: white;
+      padding: 40px 60px;
+      border: 1px dashed #f89436;
+      text-align: center;
+      max-width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #111;
+      margin-bottom: 25px;
+      line-height: 1.5;
+      font-family: 'Payfair Display, serif';
+
+
+
+
+
+
+
+
+    }
+
+    .hero-btn {
+      background-color: #f89436;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-family: bodoni moda;
+    }
+
+    .hero-btn:hover {
+      background-color: #000;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .top-bar,
+      .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .nav-icons {
+        margin-top: 10px;
+      }
+
+      .hero-content {
+        padding: 20px 30px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-btn {
+        padding: 10px 25px;
+      }
+    }
+
+    .about-me-section {
+      padding: 80px 0;
+    }
+
+    .about-box {
+      background: #fff;
+      border-radius: 30px;
+      padding: 60px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-heading {
+      font-family: bodoni moda;
+      color: #f1673a;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      
+    }
+
+    .about-title {
+      font-family: 'Playfair Display, serif';
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 25px;
+      font-family: 'Playfair Display, serif';
+    }
+
+    .progress-box {
+      margin-bottom: 20px;
+      font-family: 'Playfair Display, serif';
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .progress.tiny {
+      height: 6px;
+      border-radius: 10px;
+      background: #eee;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background-color: #f1673a;
+      height: 100%;
+      border-radius: 10px;
+      width: 0;
+      animation: fillBar 2s ease-out forwards;
+    }
+
+    @keyframes fillBar {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: var(--target-width);
+      }
+    }
+
+    .tools-slider-full {
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .slider-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: slide-left 25s linear infinite;
+    }
+
+    .tool {
+      display: inline-block;
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    .tool img {
+      width: 110px;
+      height: auto;
+      border-radius: 50%;
+      transition: 0.4s ease;
+      padding: 10px;
+      background: transparent;
+    }
+
+    .tool span {
+      margin-top: 8px;
+      display: block;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .tool img:hover {
+      background: #f1673a;
+      padding: 10px;
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-box {
+        padding: 30px;
+      }
+
+      .about-title {
+        font-size: 1.8rem;
+      }
+    }
+
+    .container-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      padding: 40px;
+    }
+
+    .cake-card {
+      text-align: center;
+      background: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cake-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .cake-card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 12px;
+      background: #f2f2f2;
+      color: #333;
+      padding: 4px 12px;
+      border-radius: 50px;
+      display: inline-block;
+      transition: 0.3s ease;
+      font-weight: 600;
+    }
+
+    .cake-card:hover .label {
+      background: orange;
+      color: white;
+    }
+
+    .cake-title {
+      margin: 10px 0 4px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+
+    .cake-price,
+    .add-to-cart {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 4px;
+      transition: opacity 0.3s ease;
+    }
+
+    .cake-price {
+      color: #000;
+    }
+
+    .add-to-cart {
+      color: orange;
+      text-decoration: underline;
+      opacity: 0;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+    }
+
+    .cake-card:hover .cake-price {
+      opacity: 0;
+    }
+
+    .cake-card:hover .add-to-cart {
+      opacity: 1;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+      font-family: 'Georgia', serif;
+    }
+
+    .try-btn {
+      display: block;
+      margin: 0 auto 40px auto;
+      padding: 12px 30px;
+      background: linear-gradient(to right, #ff9900, #ff6600);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .try-btn::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.4s ease;
+      transform: skewX(-20deg);
+    }
+
+    .try-btn:hover::after {
+      left: 100%;
+    }
+
+    .try-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(255, 102, 0, 0.4);
+      background: linear-gradient(to right, #ff7700, #ff5500);
+    }
+
+
+
+    .container-f {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #fbe9e7;
+      width: 100%;
+      min-height: auto;
+      padding: 50px 0;
+      margin-bottom: 100px;
+    }
+
+    .form-section {
+      width: 60%;
+      max-width: 500px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 60px;
+      margin-left: 50px;
+    }
+
+    .image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .image-thumbnail {
+      width: 70%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 15px;
+      color: #d35400;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 35px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #000000;
+      font-style: italic;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+    }
+
+    input,
+    select,
+    textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+      width: 380px !important;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #d35400;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    button {
+      background-color: #f8f3f3 !important;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e67e22 !important;
+    }
+
+    .R-button {
+      width: 150px;
+    }
+
+    /*  TEAM SECTION  */
+
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+      gap: 30px;
+      justify-items: center;
+      margin-top: 30px;
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-bottom: 80px;
+    }
+
+
+
+    /* Card styling */
+    .card {
+      position: relative;
+      height: 270px;
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      
+      height: auto;
+
+      object-fit: cover;
+    
+      display: block;
+     
+      margin: 0 auto;
+     
+      transition: opacity 0.3s ease;
+     
+      border: none;
+      
+    }
+
+
+    /* Hover effect */
+    .card:hover {
+      transform: translateY(-10px);
+      /* Slight lift effect on hover */
+    }
+
+ 
+    .hover-box {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 54%;
+      background: white;
+      color: black;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+     
+   
+    }
+
+   
+    .card:hover .hover-box {
+      bottom: 0;
+      /* Slide up the hover box */
+      opacity: 1;
+      /* Fade in the hover box */
+    }
+
+    /* Hover box content */
+    .hover-box h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .hover-box p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+    }
+
+    .social-icons a {
+      color: black;
+      font-size: 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f28500;
+    }
+
+
+    .team-header h4 {
+      margin-left: 10%;
+      font-family: 'Times New Roman', Times, serif;
+      /* margin-top:180px; */
+      position: relative;
+      top: 170px;
+    }
+
+    .team-header h2 {
+      margin-left: 10%;
+      /* margin-top:180px; */
+      /* margin-bottom: 20px; */
+      position: relative;
+      top: 80px;
+    }
+
+    /* .join-button{
+    float:right;
+} */
+
+    .join-button {
+      background-color: #f8f3f3 !important;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 70px;
+      cursor: pointer !important;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-left: 75%;
+      margin-bottom: 70px;
+      width: 130px;
+    }
+
+    .join-button:hover {
+      background-color: #e67e22 !important;
+    }
+
+
+
+
+    .testimonial-section {
+      margin-top: 70px;
+      max-width: 880px;
+      margin: auto;
+      text-align: center;
+      /* background-color: ; */
+      /* margin-:100px !important; */
+    }
+
+    .testimonial-section h2 {
+      font-size: 2.5rem;
+      color: #222;
+      margin-top: 10px !important;
+    }
+
+    .testimonial-section p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .slider-wrapper {
+      width: 880px;
+      overflow: hidden;
+      margin: auto;
+      direction: rtl;
+      /* ✅ fixes overflow */
+    }
+
+
+    .slider {
+      display: flex;
+      width: calc(880px * 3);
+      animation: slideRight 18s infinite ease-in-out;
+    }
+
+    .slide {
+      width: 880px;
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+    }
+
+    .testimonial-card {
+      width: 400px;
+      margin: 0 10px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      direction: ltr;
+      margin-bottom: 80px;
+
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .card-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .person-icon {
+      font-size: 40px;
+      color: #444;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .person-info {
+      text-align: left;
+    }
+
+    .person-name {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #222;
+    }
+
+    .person-subtext {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .stars {
+      color: #FFD700;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+      text-align: left;
+    }
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(880px);
+      }
+
+      45% {
+        transform: translateX(880px);
+      }
+
+      50% {
+        transform: translateX(1760px);
+      }
+
+      70% {
+        transform: translateX(1760px);
+      }
+
+      75% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+    @media (max-width: 900px) {
+
+      .testimonial-section,
+      .slider-wrapper,
+      .slide {
+        width: 100%;
+      }
+
+      .testimonial-card {
+        width: 90%;
+        margin: 0 auto 20px;
+      }
+
+      .slider {
+        flex-wrap: wrap;
+        animation: none;
+      }
+    }
+
+
+    /* Main container for the entire section */
+    .gallery-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      margin-top: 80px;
+    }
+
+    /* Left section for text */
+    .gallery-text {
+      flex: 1;
+      padding-right: 30px;
+      max-width: 40%;
+    }
+
+    .follow-us {
+      font-size: 17px;
+      font-weight: bold;
+      color: #F57C00;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-left: 45px;
+
+    }
+
+    .quote {
+      font-size: 40px;
+      color: #333;
+      margin-top: 15px;
+      line-height: 1.5;
+      font-weight: 400;
+      text-align: center;
+      font-family: 'Playfair Display, serif';
+      font-weight: bolder;
+      font-style: italic;
+    }
+
+
+    .instagram-link {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #F57C00;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      margin-left: 45px;
+    }
+
+    .instagram-link:hover {
+      color: #000;
+      /* Change to black when hovered */
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .instagram-link i {
+      margin-right: 10px;
+      font-size: 28px;
+      /* Larger Instagram icon */
+      color: #F57C00;
+    }
+
+    /* Right section for the image gallery */
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 50%;
+      transform: translateX(20px);
+      margin-right: 80px;
+      margin-top: 60px;
+    }
+
+
+
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #f2f2f2;
+      /* Add border around gallery items */
+    }
+
+    /* 
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        } */
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      /* Enhanced shadow effect on hover */
+      border-color: #F57C00;
+      /* Change border color on hover */
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .gallery-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+
+      .gallery-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-images {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer {
+      position: relative;
+      color: #ccc;
+    }
+
+    .footer-overlay {
+      background-image: url('assets/footer-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.85);
+      /* ⬅️ Dark overlay */
+      z-index: -1;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid #333;
+      padding-bottom: 30px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin: 20px;
+    }
+
+    .footer-section h4 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .social-icons i {
+      margin: 10px 8px;
+      color: #ccc;
+      background: #2a2a2a;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      background: orange;
+      color: #fff;
+    }
+
+    .subscribe {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .subscribe input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: #333;
+      color: #fff;
+    }
+
+    .subscribe button {
+      background: orange !important;
+      border: none;
+      padding: 0 15px;
+      height: 46px;
+      cursor: pointer;
+    }
+
+    .subscribe button:hover {
+      background-color: #fff !important;
+      /* color: orange !important;; */
+      border: 2px solid black !important;
+    }
+
+    .subscribe button i {
+      color: white;
+    }
+
+    .footer-bottom {
+      background: #000;
+      color: #aaa;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .footer-bottom a {
+      color: #aaa;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .footer-bottom span {
+      color: orange;
+    }
+
+    .footer-bottom p {
+      text-align: center;
+      margin-left: 100px;
+    }
+
+    .person-icon img{
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="logo"><img src="assets/logo.png" alt=""></div>
+    <nav class="nav-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Shop</a>
+      <a href="#">Pages</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="nav-icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span>Cart: <strong>$0.00</strong></span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Making your life sweeter<br>one bite at a time!</h1>
+      <a href="#" class="hero-btn">OUR CAKES</a>
+    </div>
+  </section>
+
+  <section class="about-me-section">
+    <div class="container">
+      <div class="about-box">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h2 class="about-heading">About Cake Shop</h2>
+            <h3 class="about-title">Cakes and bakes from the house of Queens!</h3>
+            <p class="about-text">The "Cake Shop" is a Jordanian Brand that started as a small family business. The
+              owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-box">
+              <div class="progress-label">
+                <span>Chocolate Cakes</span><span>90%</span>
+              </div>
+              <div class="progress tiny">
+                <div class="progress-bar" style="--target-width: 90%;"></div>
+              </div>
+            </div>
+            <div class="progress-box">
+              <div class="progress-label">
+                <span>Wedding Cakes</span><span>85%</span>
+              </div>
+              <div class="progress tiny">
+                <div class="progress-bar" style="--target-width: 85%;"></div>
+              </div>
+            </div>
+            <div class="progress-box">
+              <div class="progress-label">
+                <span>Pastries</span><span>75%</span>
+              </div>
+              <div class="progress tiny">
+                <div class="progress-bar" style="--target-width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ICON SLIDER BELOW -->
+        <div class="tools-slider-full mt-5">
+          <div class="slider-track">
+            <div class="tool"><img src="assets/cupcake.webp" alt="Cupcake"><span>Cupcake</span></div>
+            <div class="tool"><img src="assets/butter ChatGPT.png" alt="Butter"><span>Butter</span></div>
+            <div class="tool"><img src="assets/cake.png" alt="Cake"><span>Cake</span></div>
+            <div class="tool"><img src="assets/chocolate-ice-cream.png" alt="Ice Cream"><span>Ice Cream</span></div>
+            <div class="tool"><img src="assets/3-donuts.png" alt="Donuts"><span>Donuts</span></div>
+            <!-- Repeat for smooth scroll -->
+            <div class="tool"><img src="assets/cupcake.webp" alt="Cupcake"><span>Cupcake</span></div>
+            <div class="tool"><img src="assets/butter ChatGPT.png" alt="Butter"><span>Butter</span></div>
+            <div class="tool"><img src="assets/cake.png" alt="Cake"><span>Cake</span></div>
+            <div class="tool"><img src="assets/chocolate-ice-cream.png" alt="Ice Cream"><span>Ice Cream</span></div>
+            <div class="tool"><img src="assets/3-donuts.png" alt="Donuts"><span>Donuts</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cake Grid Section -->
+  <div class="cake-grid">
+    <h2 class="section-title">Our Special Desserts</h2>
+    <button class="try-btn">Must Try!</button>
+    <div class="container-grid">
+      <div class="cake-card">
+        <img src="assets/product-1.jpg" alt="Dozen Cupcakes">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">DOZEN CUPCAKES</div>
+        <div class="cake-price">$32.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-2.jpg" alt="Cookies and Cream">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">COOKIES AND CREAM</div>
+        <div class="cake-price">$30.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-3.jpg" alt="Gluten Free Mini">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">GLUTEN FREE MINI DOZEN</div>
+        <div class="cake-price">$31.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-4.jpg" alt="Cookie Dough">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">COOKIE DOUGH</div>
+        <div class="cake-price">$25.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-5.jpg" alt="Vanilla Salted Caramel">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">VANILLA SALTED CARAMEL</div>
+        <div class="cake-price">$05.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-6.jpg" alt="German Chocolate">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">GERMAN CHOCOLATE</div>
+        <div class="cake-price">$14.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-7.jpg" alt="Dulce De Leche">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">DULCE DE LECHE</div>
+        <div class="cake-price">$32.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="cake-card">
+        <img src="assets/product-8.jpg" alt="Mississippi Mud">
+        <div class="label">Cupcake</div>
+        <div class="cake-title">MISSISSIPPI MUD</div>
+        <div class="cake-price">$08.00</div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form and Image Section -->
+  <section class="container-f">
+    <div class="form-section">
+      <h1>Class Cakes</h1>
+      <h2>Made from your own hands</h2>
+      <form>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="phone" placeholder="Phone">
+        <select id="class">
+          <option value="">Studying Class</option>
+          <option value="baking">Baking</option>
+          <option value="cake-decoration">Cake Decoration</option>
+        </select>
+        <textarea id="requirements" placeholder="Type your requirements"></textarea>
+        <button type="submit" class="R-button">Registration</button>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="assets/stand-cake.png" alt="Chocolate Cake" class="image-thumbnail">
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="team-header">
+      <div>
+        <h4>OUR TEAM</h4>
+        <h2>Our Sweet Baker</h2>
+      </div>
+      <button class="join-button">JOIN US</button>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/team-1.jpg" alt="Chef 1">
+        <div class="hover-box">
+          <h3>Chef Mario</h3>
+          <p>Pastry Specialist</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/team-2.jpg" alt="Chef 2">
+        <div class="hover-box">
+          <h3>Chef Sofia</h3>
+          <p>Specialty Cakes</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/team-3.jpg" alt="Chef 3">
+        <div class="hover-box">
+          <h3>Chef Luca</h3>
+          <p>Cake Decorating Expert</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/team-4.jpg" alt="Chef 4">
+        <div class="hover-box">
+          <h3>Chef Emma</h3>
+          <p>Pastry Expert</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section style="background-color: #fbe9e7;">
+    <section class="testimonial-section" style="background-color: #fbe9e7;">
+      <h2 style="margin-top: 200px;">Our Clients</h2>
+      <p>Our Testimonials</p>
+
+      <div class="slider-wrapper">
+        <div class="slider">
+
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">KERRY D.SILVA</div>
+                    <div class="person-subtext">New York</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial-text">
+                Excellent work! The entire process was smooth and exceeded my expectations.
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client-2.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">OPHELIA NAUNEZ</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+              <div class="testimonial-text">
+                Very responsive and detail-oriented. I’m definitely coming back again.
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">KERRY D.SILVA</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial-text">
+                The design and timing were perfect. I highly recommend them!
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client-2.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">OPHELIA NAUNEZ</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+              <div class="testimonial-text">
+                Everything was done professionally. Very satisfied with the service.
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">KERRY D.SILVA</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial-text">
+                The design and timing were perfect. I highly recommend them!
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client-2.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">OPHELIA NAUNEZ</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+              <div class="testimonial-text">
+                Everything was done professionally. Very satisfied with the service.
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">KERRY D.SILVA</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial-text">
+                The design and timing were perfect. I highly recommend them!
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client-2.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">OPHELIA NAUNEZ</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+              <div class="testimonial-text">
+                Everything was done professionally. Very satisfied with the service.
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 (Repeat Slide 1 for infinite loop) -->
+          <div class="slide">
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">KERRY D.SILVA</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial-text">
+                Excellent work! The entire process was smooth and exceeded my expectations.
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="card-top">
+                <div class="card-left">
+                  <div class="person-icon"><img src="assets/client-2.jpg" alt=""></div>
+                  <div class="person-info">
+                    <div class="person-name">OPHELIA NAUNEZ</div>
+                    <div class="person-subtext">New World</div>
+                  </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+              <div class="testimonial-text">
+                Very responsive and detail-oriented. I’m definitely coming back again.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <div class="gallery-section">
+    <!-- Left Text Section -->
+    <div class="gallery-text">
+      <span class="follow-us">FOLLOW US ON INSTAGRAM</span>
+      <p class="quote">Sweet moments are saved as memories.</p>
+      <a href="https://instagram.com/sweetcake" class="instagram-link">
+        <i class="fab fa-instagram"></i>@sweetcake
+      </a>
+    </div>
+
+    <!-- Right Image Gallery Section -->
+    <section class="gallery-images">
+      <div class="gallery-item">
+        <img src="assets/gallery-1.jpg" alt="Dessert 1">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/gallery-2.jpg" alt="Dessert 2">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/galllery-3.jpg" alt="Dessert 3">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/gallery-4.jpg" alt="Dessert 4">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/galllery-3.jpg" alt="Dessert 5">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/gallery-5.jpg" alt="Dessert 6">
+      </div>
+  </div>
+  </section>
+
+
+  <section class="map-container">
+    <div class="map-img">
+      <img src="assets/map.jpeg" alt="" style="width:98.5vw; height:45vh;">
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-overlay">
+      <div class="footer-container">
+        <!-- Working Hours -->
+        <div class="footer-section">
+          <h4>WORKING HOURS</h4>
+          <p>Monday - Friday: 08:00 am – 08:30 pm</p>
+          <p>Saturday: 10:00 am – 16:30 pm</p>
+          <p>Sunday: 10:00 am – 16:30 pm</p>
+        </div>
+
+        <!-- Logo & Social -->
+        <div class="footer-section center">
+          <div class="logo">
+            <img src="assets/footer-logo.png" alt="Cake Logo" />
+          </div>
+          <p>
+            Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna
+            aliqua.
+          </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook fa-beat-fade"></i>
+            <i class="fa-brands fa-twitter fa-beat-fade"></i>
+            <i class="fa-brands fa-square-instagram fa-beat-fade"></i>
+            <i class="fa-brands fa-youtube fa-beat-fade"></i>
+          </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-section">
+          <h4>SUBSCRIBE</h4>
+          <p>Get latest updates and offers.</p>
+          <div class="subscribe">
+            <input type="email" placeholder="Email" />
+            <button><i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <p>Copyright ©2025 All rights reserved | This template is made with <span>❤</span> by Hiba Saleem
+      </p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Site Map</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+
+</html>
