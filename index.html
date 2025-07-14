@@ -320,16 +320,20 @@
 
     .container-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
       gap: 30px;
       justify-items: center;
       padding: 40px;
+      width:100%
     }
-
+     .cake-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
     .cake-card {
       text-align: center;
       background: #fff;
-      padding: 15px;
+      padding: 40px;
       border-radius: 6px;
       transition: transform 0.3s ease;
       position: relative;
@@ -448,6 +452,12 @@
       box-shadow: 0 6px 16px rgba(255, 102, 0, 0.4);
       background: linear-gradient(to right, #ff7700, #ff5500);
     }
+    
+    .cake-grid .container-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
 
 
 
