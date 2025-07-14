@@ -1162,10 +1162,26 @@
     .person-icon img{
       border-radius: 50%;
     }
+    .scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: #ff6600;
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  color: #e25500;
+  transform: scale(1.1);
+}
+
   </style>
 </head>
 
-<body>
+<body id="top">
 
   <!-- Navigation -->
   <header class="main-header">
@@ -1686,6 +1702,10 @@
     </div>
   </footer>
 
+
+<a href="#top" class="scroll-top-btn">
+ <i class="fa-solid fa-arrow-up fa-bounce"></i>
+</a>
 
 
 
